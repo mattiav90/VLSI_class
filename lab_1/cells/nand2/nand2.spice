@@ -1,0 +1,26 @@
+*
+*---------------------------------------------------
+*  Main extract file nand2.ext [scale=1]
+*---------------------------------------------------
+*
+* -- connections ---
+* -- fets ---
+M1 out a Vdd Vdd CMOSP W=0.45U L=0.45U
++ AS=0.5265P PS=4.14U AD=0.4455P PD=2.88U 
+M2 Vdd b out Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M3 a_0_n13# a GND GND CMOSN W=0.45U L=0.45U
++ AS=0.2835P PS=2.16U AD=0.4455P PD=2.88U 
+M4 out b a_0_n13# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.243P PD=1.98U 
+* -- caps ---
+C5 Vdd out 0.108651F
+C6 out b 0.187233F
+C7 a Vdd 0.135306F
+C8 Vdd b 0.135306F
+C9 a GND 0.12597F
+C10 Vdd GND 0.55488F
+C11 b GND 0.12597F
+*--- inferred globals
+.global Vdd
+.global GND

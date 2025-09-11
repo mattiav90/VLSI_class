@@ -1,0 +1,18 @@
+*
+*---------------------------------------------------
+*  Main extract file inv.ext [scale=1]
+*---------------------------------------------------
+*
+* -- connections ---
+* -- fets ---
+M1 out in Vdd Vdd CMOSP W=0.45U L=0.45U
++ AS=0.3645P PS=2.52U AD=0.3645P PD=2.52U 
+M2 out in GND GND CMOSN W=0.45U L=0.45U
++ AS=0.3645P PS=2.52U AD=0.3645P PD=2.52U 
+* -- caps ---
+C3 in Vdd 0.132244F
+C4 in GND 0.131048F
+C5 Vdd GND 0.573672F
+*--- inferred globals
+.global Vdd
+.global GND

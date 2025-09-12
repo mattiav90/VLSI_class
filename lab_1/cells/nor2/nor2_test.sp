@@ -21,7 +21,7 @@ vpwr1 gnd 0 dc 0.0v
 *
 * include circuit model
 *
-.inc nand2.spice
+.inc nor2.spice
 
 *
 * set the voltage of "in" to be a piecewise linear  (PWL)

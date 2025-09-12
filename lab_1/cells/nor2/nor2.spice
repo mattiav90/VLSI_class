@@ -1,0 +1,25 @@
+*
+*---------------------------------------------------
+*  Main extract file nor2.ext [scale=1]
+*---------------------------------------------------
+*
+* -- connections ---
+* -- fets ---
+M1 a_0_4# a out Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M2 Vdd b a_0_4# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.243P PD=1.98U 
+M3 out a GND GND CMOSN W=0.45U L=0.45U
++ AS=0.486P PS=3.96U AD=0.4455P PD=2.88U 
+M4 GND b out GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+* -- caps ---
+C5 Vdd a 0.133008F
+C6 out a 0.167994F
+C7 Vdd b 0.133008F
+C8 a GND 0.12597F
+C9 Vdd GND 0.505461F
+C10 b GND 0.12597F
+*--- inferred globals
+.global Vdd
+.global GND

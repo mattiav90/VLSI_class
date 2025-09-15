@@ -1,0 +1,54 @@
+| units: 9 tech: scmos format: MIT
+p out4_2 out nor2_0/a_0_4# 5 5 294 8
+n out4_1 out GND! 5 5 309 -8
+n out4_2 GND! out 5 5 294 -8
+p out4_1 nor2_0/a_0_4# Vdd! 5 5 309 8
+p nand2_0/a Vdd! out4_1 5 5 100 8
+n nand2_0/b nand2_0/a_0_n13# out4_1 5 5 115 -8
+n nand2_0/a GND! nand2_0/a_0_n13# 5 5 100 -8
+p nand2_0/b out4_1 Vdd! 5 5 115 8
+p nand2_1/a Vdd! out4_2 5 5 249 8
+n nand2_1/b nand2_1/a_0_n13# out4_2 5 5 264 -8
+n nand2_1/a GND! nand2_1/a_0_n13# 5 5 249 -8
+p nand2_1/b out4_2 Vdd! 5 5 264 8
+n in6 nand2_1/a GND! 5 5 160 -8
+p in6 a_149_8# Vdd! 5 5 160 8
+n in2 nand2_0/a GND! 5 5 11 -8
+p in4 a_48_8# Vdd! 5 5 59 8
+p in3 nand2_0/b a_48_8# 5 5 43 8
+n in5 GND! nand2_1/a 5 5 144 -8
+p in8 a_197_8# Vdd! 5 5 208 8
+n in4 nand2_0/b GND! 5 5 59 -8
+p in7 nand2_1/b a_197_8# 5 5 192 8
+p in5 nand2_1/a a_149_8# 5 5 144 8
+n in7 GND! nand2_1/b 5 5 192 -8
+n in1 GND! nand2_0/a 5 5 -4 -8
+n in8 nand2_1/b GND! 5 5 208 -8
+n in3 GND! nand2_0/b 5 5 43 -8
+p in2 a_0_8# Vdd! 5 5 11 8
+p in1 nand2_0/a a_0_8# 5 5 -4 8
+R a_197_8# 17
+R a_149_8# 17
+R a_48_8# 17
+R a_0_8# 17
+R in8 46
+R in7 46
+R in6 46
+R in5 46
+R in4 46
+R in3 46
+R in2 46
+R in1 46
+R nand2_1/a_0_n13# 15
+R out4_2 74
+R nand2_1/b 72
+R nand2_1/a 72
+R nand2_0/a_0_n13# 15
+R out4_1 76
+R nand2_0/b 72
+R nand2_0/a 72
+R GND! 534
+C Vdd! GND 4.47
+R Vdd! 12908
+R nor2_0/a_0_4# 17
+R out 25

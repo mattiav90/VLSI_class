@@ -1,0 +1,36 @@
+ana in1 in2 in3 in4 out
+h Vdd!
+l GND!
+s
+l in1 
+l in2
+l in3
+l in4
+s
+h in1
+s
+l in1
+h in2
+s
+l in2
+h in3
+s
+l in3
+h in4
+s
+l in4
+h in1
+h in2
+s
+h in3
+h in4
+s
+l in3
+s
+l in1
+s
+l in2
+s
+l in4
+s
+

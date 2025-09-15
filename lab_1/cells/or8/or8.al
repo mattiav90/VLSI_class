@@ -1,0 +1,10 @@
+= out4_2 nor2_0/a
+= out4_2 nand2_1/out
+= nand2_1/b a_186_8#
+= nand2_1/a a_138_8#
+= out4_1 nor2_0/b
+= out4_1 nand2_0/out
+= nand2_0/b a_37_8#
+= nand2_0/a a_n11_8#
+= Vdd! w_n17_2#
+= out nor2_0/out

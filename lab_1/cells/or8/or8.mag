@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1757968460
+timestamp 1757972575
 << nwell >>
 rect -17 17 332 20
 rect -17 15 281 17
@@ -138,7 +138,7 @@ rect 160 -1 165 4
 rect 192 -1 197 4
 rect 208 -1 213 4
 << metal1 >>
-rect 26 17 321 20
+rect 26 17 340 20
 rect 26 16 96 17
 rect 175 16 245 17
 rect 26 13 31 16
@@ -154,6 +154,7 @@ rect 171 8 175 13
 rect 191 8 200 13
 rect 219 8 223 13
 rect 317 8 321 17
+rect 336 11 340 17
 rect 3 4 8 8
 rect 11 4 16 5
 rect 43 4 48 5
@@ -169,6 +170,8 @@ rect 208 4 213 5
 rect 292 -1 298 4
 rect 302 0 305 3
 rect 309 -1 315 4
+rect 353 -2 358 3
+rect 363 -1 366 4
 rect 22 -9 26 -4
 rect 70 -9 74 -4
 rect -11 -13 -6 -9
@@ -183,10 +186,13 @@ rect 166 -13 171 -9
 rect 186 -13 191 -9
 rect 214 -13 219 -9
 rect 232 -13 237 -4
+rect 301 -9 306 -4
+rect 324 -9 342 -4
 rect -11 -16 289 -13
 << m2contact >>
 rect 51 8 56 13
 rect 200 8 205 13
+rect 301 8 306 13
 rect 3 -1 8 4
 rect 94 -1 99 4
 rect 107 -1 112 4
@@ -197,11 +203,14 @@ rect 256 -1 261 4
 rect 269 -1 274 4
 rect 287 -1 292 4
 rect 315 -1 320 4
+rect 348 -1 353 4
 << metal2 >>
 rect 56 8 125 13
 rect 205 8 274 13
+rect 306 8 353 13
 rect 120 4 125 8
 rect 269 4 274 8
+rect 348 4 353 8
 rect 8 -1 94 4
 rect 157 -1 243 4
 rect 107 -12 112 -1
@@ -210,18 +219,22 @@ rect 287 -5 292 -1
 rect 256 -8 292 -5
 rect 315 -12 320 -1
 rect 107 -16 320 -12
+use inv  inv_0 ../inv
+timestamp 1757634606
+transform 1 0 355 0 1 4
+box -23 -20 18 22
+use nand2  nand2_0 ../nand2
+timestamp 1757633819
+transform 1 0 104 0 1 4
+box -24 -19 28 15
+use nand2  nand2_1
+timestamp 1757633819
+transform 1 0 253 0 1 4
+box -24 -19 28 15
 use nor2  nor2_0 ../nor2
 timestamp 1757643574
 transform 1 0 298 0 1 4
 box -17 -20 34 15
-use nand2  nand2_1 ../nand2
-timestamp 1757633819
-transform 1 0 253 0 1 4
-box -24 -19 28 15
-use nand2  nand2_0
-timestamp 1757633819
-transform 1 0 104 0 1 4
-box -24 -19 28 15
 << labels >>
 rlabel polycontact -4 1 -3 2 1 in1
 rlabel metal1 12 4 13 5 1 in2
@@ -235,5 +248,5 @@ rlabel metal1 19 -15 21 -14 1 GND!
 rlabel metal1 43 -15 44 -14 1 GND!
 rlabel m2contact 109 1 110 3 1 out4_1
 rlabel m2contact 257 1 259 2 1 out4_2
-rlabel metal1 303 1 304 3 1 out
+rlabel metal1 364 1 365 2 1 out
 << end >>

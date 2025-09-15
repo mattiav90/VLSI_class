@@ -1,3 +1,7 @@
+= inv_0/in nor2_0/out
+= inv_0/in m1_301_n9#
+= inv_0/in m1_302_0#
+= inv_0/in m1_301_8#
 = out4_2 nor2_0/a
 = out4_2 nand2_1/out
 = nand2_1/b a_186_8#
@@ -7,4 +11,5 @@
 = nand2_0/b a_37_8#
 = nand2_0/a a_n11_8#
 = Vdd! w_n17_2#
-= out nor2_0/out
+= out inv_0/out
+= GND! m1_324_n9#

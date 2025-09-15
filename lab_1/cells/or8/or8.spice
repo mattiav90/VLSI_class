@@ -1,0 +1,167 @@
+*---------------------------------------------------
+* Subcircuit from nor2.ext
+*---------------------------------------------------
+.subckt nor2 _
+* -- connections ---
+* -- fets ---
+M1 a_0_4# a out Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M2 Vdd b a_0_4# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.243P PD=1.98U 
+M3 out a GND GND CMOSN W=0.45U L=0.45U
++ AS=0.486P PS=3.96U AD=0.4455P PD=2.88U 
+M4 GND b out GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+* -- caps ---
+C5 Vdd b 0.133008F
+C6 a Vdd 0.133008F
+C7 a out 0.167994F
+C8 a GND 0.12597F
+C9 Vdd GND 0.505461F
+C10 b GND 0.12597F
+.ends
+*---------------------------------------------------
+* Subcircuit from nand2.ext
+*---------------------------------------------------
+.subckt nand2 _
+* -- connections ---
+* -- fets ---
+M1 out a Vdd Vdd CMOSP W=0.45U L=0.45U
++ AS=0.5265P PS=4.14U AD=0.4455P PD=2.88U 
+M2 Vdd b out Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M3 a_0_n13# a GND GND CMOSN W=0.45U L=0.45U
++ AS=0.2835P PS=2.16U AD=0.4455P PD=2.88U 
+M4 out b a_0_n13# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.243P PD=1.98U 
+* -- caps ---
+C5 out Vdd 0.108651F
+C6 a Vdd 0.137264F
+C7 out b 0.202625F
+C8 b Vdd 0.137264F
+C9 a GND 0.128326F
+C10 Vdd GND 0.55488F
+C11 b GND 0.128326F
+.ends
+*---------------------------------------------------
+* Subcircuit from inv.ext
+*---------------------------------------------------
+.subckt inv _
+* -- connections ---
+* -- fets ---
+M1 out in Vdd Vdd CMOSP W=0.45U L=0.45U
++ AS=0.3645P PS=2.52U AD=0.3645P PD=2.52U 
+M2 out in GND GND CMOSN W=0.45U L=0.45U
++ AS=0.3645P PS=2.52U AD=0.3645P PD=2.52U 
+* -- caps ---
+C3 Vdd in 0.132244F
+C4 in GND 0.131048F
+C5 Vdd GND 0.573672F
+.ends
+*
+*---------------------------------------------------
+*  Main extract file or8.ext [scale=1]
+*---------------------------------------------------
+*
+*--- subcircuits ---
+xnor2_0 GND nor2
+xnand2_1 GND nand2
+xnand2_0 GND nand2
+xinv_0 GND inv
+* -- connections ---
+V1 out4_1 xnand2_0:out
+V2 xnand2_0:out xnor2_0:b
+V3 a_37_8# xnand2_0:b
+V4 m1_324_n9# GND!
+V5 out4_2 xnand2_1:out
+V6 xnand2_1:out xnor2_0:a
+V7 a_n11_8# xnand2_0:a
+V8 w_n17_2# Vdd!
+V9 m1_302_0# m1_301_8#
+V10 m1_301_8# xinv_0:in
+V11 xinv_0:in m1_301_n9#
+V12 m1_301_n9# xnor2_0:out
+V13 a_186_8# xnand2_1:b
+V14 out xinv_0:out
+V15 a_138_8# xnand2_1:a
+* -- fets ---
+M16 a_0_8# in1 a_n11_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M17 Vdd in2 a_0_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.972P PD=7.92U 
+M18 a_48_8# in3 a_37_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M19 Vdd in4 a_48_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M20 a_149_8# in5 a_138_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M21 Vdd in6 a_149_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M22 a_197_8# in7 a_186_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M23 Vdd in8 a_197_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M24 a_n11_8# in1 GND GND CMOSN W=0.45U L=0.45U
++ AS=1.944P PS=15.84U AD=0.4455P PD=2.88U 
+M25 GND in2 a_n11_8# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M26 a_37_8# in3 GND GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.4455P PD=2.88U 
+M27 GND in4 a_37_8# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M28 a_138_8# in5 GND GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.4455P PD=2.88U 
+M29 GND in6 a_138_8# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M30 a_186_8# in7 GND GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.4455P PD=2.88U 
+M31 GND in8 a_186_8# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+* -- caps ---
+C32 m1_301_n9# Vdd 0.296788F
+C33 Vdd a_186_8# 0.165614F
+C34 out4_1 a_37_8# 0.10055F
+C35 Vdd a_37_8# 0.157604F
+C36 Vdd in7 0.151324F
+C37 a_37_8# in3 0.202625F
+C38 Vdd in1 0.133008F
+C39 in8 a_186_8# 0.103708F
+C40 a_n11_8# in2 0.128513F
+C41 in5 Vdd 0.144668F
+C42 a_37_8# in4 0.103708F
+C43 a_37_8# a_n11_8# 0.647785F
+C44 a_186_8# a_138_8# 0.647785F
+C45 out4_2 a_186_8# 0.127375F
+C46 m1_301_n9# Vdd 0.103034F
+C47 Vdd in6 0.146992F
+C48 in7 a_186_8# 0.202625F
+C49 in8 Vdd 0.151324F
+C50 Vdd in2 0.135332F
+C51 in5 a_138_8# 0.167994F
+C52 a_37_8# Vdd 0.436895F
+C53 a_n11_8# in1 0.167994F
+C54 Vdd in3 0.151324F
+C55 Vdd a_138_8# 0.312933F
+C56 out4_2 out4_1 0.45855F
+C57 in6 a_138_8# 0.128513F
+C58 Vdd a_186_8# 0.436895F
+C59 Vdd in4 0.151324F
+C60 out4_2 GND 0.51431F
+C61 in5 GND 0.12597F
+C62 m1_301_n9# GND 0.249086F
+C63 a_186_8# GND 0.209213F
+C64 in6 GND 0.12597F
+C65 a_n11_8# GND 0.256191F
+C66 a_37_8# GND 0.209213F
+C67 Vdd GND 2.94006F
+C68 a_138_8# GND 0.259854F
+C69 in8 GND 0.12597F
+C70 out4_1 GND 1.30817F
+C71 in1 GND 0.12597F
+C72 in3 GND 0.12597F
+C73 in2 GND 0.12597F
+C74 in4 GND 0.12597F
+C75 in7 GND 0.12597F
+*--- inferred globals
+.global Vdd
+.global GND

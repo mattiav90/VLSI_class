@@ -1,0 +1,73 @@
+*---------------------------------------------------
+* Subcircuit from nand2.ext
+*---------------------------------------------------
+.subckt nand2 _
+* -- connections ---
+* -- fets ---
+M1 out a Vdd Vdd CMOSP W=0.45U L=0.45U
++ AS=0.5265P PS=4.14U AD=0.4455P PD=2.88U 
+M2 Vdd b out Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M3 a_0_n13# a GND GND CMOSN W=0.45U L=0.45U
++ AS=0.2835P PS=2.16U AD=0.4455P PD=2.88U 
+M4 out b a_0_n13# GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.243P PD=1.98U 
+* -- caps ---
+C5 out Vdd 0.108651F
+C6 a Vdd 0.137264F
+C7 out b 0.202625F
+C8 b Vdd 0.137264F
+C9 a GND 0.128326F
+C10 Vdd GND 0.55488F
+C11 b GND 0.128326F
+.ends
+*
+*---------------------------------------------------
+*  Main extract file or4.ext [scale=1]
+*---------------------------------------------------
+*
+*--- subcircuits ---
+xnand2_0 GND nand2
+* -- connections ---
+V1 out xnand2_0:out
+V2 out2 xnand2_0:b
+V3 out1 xnand2_0:a
+* -- fets ---
+M4 a_0_8# in1 out1 Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M5 Vdd in2 a_0_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.486P PD=3.96U 
+M6 a_48_8# in3 out2 Vdd CMOSP W=0.45U L=0.45U
++ AS=0.243P PS=1.98U AD=0.4455P PD=2.88U 
+M7 Vdd in4 a_48_8# Vdd CMOSP W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M8 out1 in1 GND GND CMOSN W=0.45U L=0.45U
++ AS=0.972P PS=7.92U AD=0.4455P PD=2.88U 
+M9 GND in2 out1 GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+M10 out2 in3 GND GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0.4455P PD=2.88U 
+M11 GND in4 out2 GND CMOSN W=0.45U L=0.45U
++ AS=0P PS=0P AD=0P PD=0P 
+* -- caps ---
+C12 out2 Vdd 0.157604F
+C13 Vdd in3 0.151324F
+C14 in4 out2 0.103708F
+C15 in1 out1 0.167994F
+C16 in2 Vdd 0.135332F
+C17 out2 out1 0.647785F
+C18 out2 in3 0.202625F
+C19 Vdd in1 0.133008F
+C20 in4 Vdd 0.151324F
+C21 out2 Vdd 0.436895F
+C22 in2 out1 0.128513F
+C23 out2 GND 0.209213F
+C24 out1 GND 0.256191F
+C25 Vdd GND 1.2857F
+C26 in1 GND 0.12597F
+C27 in3 GND 0.12597F
+C28 in2 GND 0.12597F
+C29 in4 GND 0.12597F
+*--- inferred globals
+.global Vdd
+.global GND

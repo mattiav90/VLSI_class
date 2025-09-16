@@ -1,4 +1,4 @@
-timestamp 1757963506
+timestamp 1758029345
 version 8.3
 tech scmos
 style TSMC0.18um(tsmc18)from:t24i
@@ -16,28 +16,30 @@ node "in3" 46 6.21725e-14 43 -12 p 0 0 0 0 0 0 0 0 0 0 145 68 0 0 30 22 0 0 0 0 
 node "in2" 46 6.21725e-14 11 -12 p 0 0 0 0 0 0 0 0 0 0 145 68 0 0 30 22 0 0 0 0 0 0 0 0 0 0
 node "in1" 46 4.08562e-14 -5 -12 p 0 0 0 0 0 0 0 0 0 0 145 68 0 0 25 20 0 0 0 0 0 0 0 0 0 0
 node "GND!" 146 146.412 -17 -16 pw 120 88 50 40 0 0 0 0 1965 356 0 0 0 0 612 330 0 0 0 0 0 0 0 0 0 0
+equiv "GND!" "GND!"
 node "Vdd!" 11269 1285.7 -17 2 nw 50 40 60 44 2006 334 0 0 0 0 0 0 0 0 540 276 0 0 0 0 0 0 0 0 0 0
-cap "in2" "out1" 128.513
-cap "Vdd!" "out1" 93.606
-cap "out2" "Vdd!" 436.895
-cap "out2" "a_48_8#" 25.08
+equiv "Vdd!" "Vdd!"
+cap "out1" "Vdd!" 93.606
 cap "out1" "in3" 36.165
-cap "in2" "GND!" 125.97
-cap "in4" "Vdd!" 151.324
-cap "Vdd!" "in1" 133.008
+cap "in1" "Vdd!" 133.008
+cap "GND!" "in2" 125.97
+cap "out2" "Vdd!" 436.895
 cap "out2" "in3" 202.625
+cap "Vdd!" "in4" 151.324
+cap "out2" "a_48_8#" 25.08
 cap "GND!" "in3" 125.97
-cap "out2" "out1" 647.785
-cap "out1" "a_0_8#" 22.65
-cap "in2" "Vdd!" 135.332
-cap "out1" "GND!" 131.608
-cap "in4" "out1" 36.165
+cap "Vdd!" "in2" 135.332
 cap "in1" "out1" 167.994
-cap "out2" "GND!" 89.4115
-cap "in4" "out2" 103.708
+cap "out2" "out1" 647.785
 cap "Vdd!" "in3" 151.324
-cap "in4" "GND!" 125.97
+cap "out1" "in4" 36.165
+cap "out1" "GND!" 131.608
+cap "out2" "in4" 103.708
+cap "out1" "in2" 128.513
 cap "in1" "GND!" 125.97
+cap "a_0_8#" "out1" 22.65
+cap "out2" "GND!" 89.4115
+cap "GND!" "in4" 125.97
 fet nfet 59 -9 60 -8 25 20 "GND!" "in4" 10 0 "out2" 5 0 "GND!" 5 0
 fet nfet 43 -9 44 -8 25 20 "GND!" "in3" 10 0 "GND!" 5 0 "out2" 5 0
 fet nfet 11 -9 12 -8 25 20 "GND!" "in2" 10 0 "out1" 5 0 "GND!" 5 0
@@ -47,22 +49,22 @@ fet pfet 43 8 44 9 25 20 "Vdd!" "in3" 10 0 "out2" 5 0 "a_48_8#" 5 0
 fet pfet 11 8 12 9 25 20 "Vdd!" "in2" 10 0 "a_0_8#" 5 0 "Vdd!" 5 0
 fet pfet -5 8 -4 9 25 20 "Vdd!" "in1" 10 0 "out1" 5 0 "a_0_8#" 5 0
 subcap "out2" -110.296
-cap "nand2_0/GND!" "out1" 2.364
+cap "out1" "Vdd!" 1.983
+cap "in3" "Vdd!" -2.84217e-14
+cap "out1" "nand2_0/GND!" 2.364
 cap "Vdd!" "in2" -2.84217e-14
-cap "Vdd!" "in1" 1.42109e-14
-cap "Vdd!" "out1" 1.983
-cap "out2" "Vdd!" 4.347
-cap "Vdd!" "in4" -2.84217e-14
-cap "Vdd!" "in3" -2.84217e-14
+cap "Vdd!" "out2" 4.347
+cap "in4" "Vdd!" -2.84217e-14
+cap "Vdd!" "in1" -2.84217e-14
 subcap "out" -21.044
-cap "nand2_0/b" "nand2_0/a" 11.36
-cap "nand2_0/b" "nand2_0/GND!" 12.68
-cap "nand2_0/b" "nand2_0/Vdd!" 157.604
-cap "nand2_0/a" "nand2_0/GND!" 62.638
-cap "nand2_0/a" "nand2_0/Vdd!" 48.1055
+cap "nand2_0/a" "nand2_0/b" 11.36
+cap "nand2_0/GND!" "nand2_0/a" 62.638
 cap "nand2_0/b" "nand2_0/out" 96.4703
+cap "nand2_0/Vdd!" "nand2_0/b" 157.604
+cap "nand2_0/GND!" "nand2_0/b" 12.68
+cap "nand2_0/Vdd!" "nand2_0/a" 48.1055
 merge "nand2_0/a" "out1" -47.908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5 -12 0 0 0 0 0 0 0 0 0 0
-merge "nand2_0/Vdd!" "Vdd!" -1113.07 -50 -45 -60 -44 -1717 -328 0 0 0 0 0 0 0 0 -445 -265 0 0 0 0 0 0 0 0 0 0
+merge "nand2_0/Vdd!" "Vdd!" -1176.03 -50 -45 -60 -44 -1825 -340 0 0 0 0 0 0 0 0 -445 -265 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/b" "out2" -105.461 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5 -12 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/out" "out" -21.044 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/GND!" "GND!" -47.642 0 0 0 0 0 0 0 0 -122 -169 0 0 0 0 -25 -25 0 0 0 0 0 0 0 0 0 0

@@ -1,0 +1,13 @@
+ana a b out
+h Vdd!
+l GND! a b 
+s
+h a
+s
+h b
+s
+l a
+s
+l b
+s
+

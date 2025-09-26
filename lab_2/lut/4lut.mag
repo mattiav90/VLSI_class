@@ -1,0 +1,75 @@
+magic
+tech scmos
+timestamp 1758852432
+<< nwell >>
+rect 0 45 262 57
+<< pwell >>
+rect 0 -2 262 10
+<< metal1 >>
+rect 50 54 111 57
+rect 50 47 53 54
+rect 107 48 111 54
+rect 15 29 20 34
+rect 189 29 194 34
+rect 228 29 232 33
+rect 67 8 73 13
+rect 154 8 160 13
+rect 242 7 250 15
+rect 38 2 44 7
+rect 125 2 131 7
+rect 212 -1 219 6
+<< metal2 >>
+rect 5 36 12 43
+rect 76 38 99 42
+rect 163 37 187 42
+rect 5 19 12 26
+rect 81 20 95 24
+rect 164 20 183 24
+rect 242 7 250 15
+rect 212 -1 219 6
+<< gv1 >>
+rect 243 8 249 14
+rect 213 0 218 5
+<< metal3 >>
+rect 63 27 70 34
+rect 150 32 157 34
+rect 150 28 226 32
+rect 150 27 157 28
+rect 64 4 69 27
+rect 223 12 226 28
+rect 242 12 250 15
+rect 223 9 250 12
+rect 242 7 250 9
+rect 212 4 219 6
+rect 64 0 219 4
+rect 212 -1 219 0
+<< gv2 >>
+rect 64 28 69 33
+rect 151 28 156 33
+rect 243 8 249 14
+rect 213 0 218 5
+use 2lut  2lut_0
+timestamp 1758852432
+transform 1 0 47 0 1 31
+box -47 -31 41 20
+use 2lut  2lut_1
+timestamp 1758852432
+transform 1 0 134 0 1 31
+box -47 -31 41 20
+use 2lut  2lut_2
+timestamp 1758852432
+transform 1 0 221 0 1 31
+box -47 -31 41 20
+<< labels >>
+rlabel metal2 8 39 9 40 1 Vdd!
+rlabel metal2 8 22 9 23 1 GND!
+rlabel metal1 17 31 18 32 1 b
+rlabel gv2 66 30 67 31 1 out0
+rlabel gv2 153 30 154 31 1 out1
+rlabel metal1 191 31 192 32 1 a
+rlabel metal1 41 4 42 5 1 g0
+rlabel metal1 69 10 70 11 1 g1
+rlabel metal1 128 4 129 5 1 g2
+rlabel metal1 156 10 157 11 1 g3
+rlabel metal1 229 30 230 31 1 out
+<< end >>

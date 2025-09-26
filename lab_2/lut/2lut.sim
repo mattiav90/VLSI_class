@@ -1,0 +1,19 @@
+| units: 9 tech: scmos format: MIT
+p a Vdd! na 5 5 -31 6
+p na out a_16_6# 4 5 12 6
+p g0 Vdd! a_n3_6# 4 5 -6 6
+n a GND! na 5 5 -31 -10
+p g1 a_16_6# Vdd! 4 5 20 6
+p a a_n3_6# out 4 5 1 6
+n na a_n3_n11# out 4 5 1 -10
+n a out a_16_n11# 4 5 12 -10
+n g0 GND! a_n3_n11# 4 5 -6 -10
+n g1 a_16_n11# GND! 4 5 20 -10
+R GND! 79
+R out 21
+R Vdd! 89
+R g1 79
+R na 118
+R g0 92
+R a 164
+R w_n47_0# 4162

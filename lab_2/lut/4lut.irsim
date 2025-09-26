@@ -1,0 +1,41 @@
+ana a b g0 g1 g2 g3 out 
+h Vdd!
+l GND! a b g0 g1 g2 g3
+s
+h g0
+s
+l g0
+h g1 g2 g3
+s
+l g1 g2 g3
+s
+h b
+s
+h g1
+s
+l g1
+s
+h g0 g2 g3
+s
+l g0 g2 g3
+s
+h a
+s
+h g3
+s
+l g3
+s
+h g0 g1 g2
+s
+l g0 g1 g2
+s
+h a
+l b
+s
+h g1
+s
+h g2
+s
+h g3
+s
+

@@ -1,10 +1,14 @@
 magic
 tech scmos
-timestamp 1758852432
+timestamp 1758860419
 << nwell >>
-rect 0 45 262 57
+rect -2 45 263 57
+rect -2 31 4 45
+rect 259 31 263 45
 << pwell >>
-rect 0 -2 262 10
+rect -2 10 2 31
+rect 257 10 263 31
+rect -2 -2 263 10
 << metal1 >>
 rect 50 54 111 57
 rect 50 47 53 54
@@ -19,23 +23,32 @@ rect 38 2 44 7
 rect 125 2 131 7
 rect 212 -1 219 6
 << metal2 >>
-rect 5 36 12 43
+rect -2 42 1 57
+rect 5 42 12 43
+rect -2 37 12 42
 rect 76 38 99 42
 rect 163 37 187 42
+rect -2 -2 1 37
+rect 5 36 12 37
 rect 5 19 12 26
 rect 81 20 95 24
 rect 164 20 183 24
 rect 242 7 250 15
 rect 212 -1 219 6
+rect 260 -2 263 57
 << gv1 >>
 rect 243 8 249 14
 rect 213 0 218 5
 << metal3 >>
+rect 15 15 18 57
 rect 63 27 70 34
 rect 150 32 157 34
 rect 150 28 226 32
 rect 150 27 157 28
+rect 14 8 21 15
+rect 15 -2 18 8
 rect 64 4 69 27
+rect 188 8 195 15
 rect 223 12 226 28
 rect 242 12 250 15
 rect 223 9 250 12
@@ -46,24 +59,31 @@ rect 212 -1 219 0
 << gv2 >>
 rect 64 28 69 33
 rect 151 28 156 33
+rect 15 9 20 14
+rect 189 9 194 14
 rect 243 8 249 14
 rect 213 0 218 5
-use 2lut  2lut_0
+<< metal4 >>
+rect 190 15 193 57
+rect 188 8 195 15
+rect 190 -2 193 8
+<< gv3 >>
+rect 189 9 194 14
+use 2lut  2lut_2
 timestamp 1758852432
-transform 1 0 47 0 1 31
+transform 1 0 221 0 1 31
 box -47 -31 41 20
 use 2lut  2lut_1
 timestamp 1758852432
 transform 1 0 134 0 1 31
 box -47 -31 41 20
-use 2lut  2lut_2
+use 2lut  2lut_0
 timestamp 1758852432
-transform 1 0 221 0 1 31
+transform 1 0 47 0 1 31
 box -47 -31 41 20
 << labels >>
 rlabel metal2 8 39 9 40 1 Vdd!
 rlabel metal2 8 22 9 23 1 GND!
-rlabel metal1 17 31 18 32 1 b
 rlabel gv2 66 30 67 31 1 out0
 rlabel gv2 153 30 154 31 1 out1
 rlabel metal1 191 31 192 32 1 a
@@ -72,4 +92,5 @@ rlabel metal1 69 10 70 11 1 g1
 rlabel metal1 128 4 129 5 1 g2
 rlabel metal1 156 10 157 11 1 g3
 rlabel metal1 229 30 230 31 1 out
+rlabel gv2 17 11 18 12 1 b
 << end >>

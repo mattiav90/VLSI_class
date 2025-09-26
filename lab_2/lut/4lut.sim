@@ -29,19 +29,19 @@ n 2lut_2/na 2lut_2/a_n3_n11# out 4 5 222 21
 n a out 2lut_2/a_16_n11# 4 5 233 21
 n out0 GND! 2lut_2/a_n3_n11# 4 5 215 21
 n out1 2lut_2/a_16_n11# GND! 4 5 241 21
+R a 166
+R b 349
 R GND! 268
-R Vdd! 301
-R b 347
 R out 21
+R Vdd! 303
 R 2lut_2/na 118
-R a 164
 R out1 104
 R g3 80
 R 2lut_1/na 118
 R g2 92
+C w_n2_31# GND 4.59
+R w_n2_31# 6256
 R out0 115
 R g1 80
 R 2lut_0/na 118
 R g0 92
-C w_0_45# GND 4.59
-R w_0_45# 6256

@@ -1,62 +1,89 @@
 magic
 tech scmos
-timestamp 1757633819
+timestamp 1759205441
+<< error_p >>
+rect -12 10 24 11
+rect 22 6 24 10
 << nwell >>
-rect -24 -2 28 15
+rect -20 -2 28 16
 << pwell >>
-rect -24 -19 28 -2
+rect -20 -22 30 -2
 << ntransistor >>
-rect -5 -13 0 -8
-rect 11 -13 16 -8
+rect -5 -16 0 -11
+rect 13 -16 18 -11
 << ptransistor >>
-rect -5 4 0 9
-rect 11 4 16 9
+rect -5 6 0 11
+rect 13 6 18 11
 << ndiffusion >>
-rect -7 -13 -5 -8
-rect 0 -13 11 -8
-rect 16 -13 17 -8
+rect -7 -16 -5 -11
+rect 0 -16 13 -11
+rect 18 -16 19 -11
 << pdiffusion >>
-rect -7 4 -5 9
-rect 0 4 3 9
-rect 8 4 11 9
-rect 16 4 17 9
+rect -7 6 -5 11
+rect 0 6 4 11
+rect 9 6 13 11
+rect 18 6 19 11
 << ndcontact >>
-rect -12 -13 -7 -8
-rect 17 -13 22 -8
+rect -12 -16 -7 -11
+rect 19 -16 24 -11
 << pdcontact >>
-rect -12 4 -7 9
-rect 3 4 8 9
-rect 17 4 22 9
-<< psubstratepcontact >>
-rect -21 -13 -16 -8
-<< nsubstratencontact >>
-rect -21 4 -16 9
+rect -12 6 -7 11
+rect 4 6 9 11
+rect 19 6 24 11
 << polysilicon >>
-rect -5 9 0 12
-rect 11 9 16 12
-rect -5 0 0 4
-rect -5 -8 0 -5
-rect 11 0 16 4
-rect 11 -8 16 -5
-rect -5 -16 0 -13
-rect 11 -16 16 -13
+rect -5 11 0 14
+rect 13 11 18 14
+rect -5 0 0 6
+rect -5 -11 0 -5
+rect 13 0 18 6
+rect 13 -11 18 -5
+rect -5 -19 0 -16
+rect 13 -19 18 -16
 << polycontact >>
 rect -5 -5 0 0
-rect 11 -5 16 0
+rect 13 -5 18 0
 << metal1 >>
-rect -12 12 22 15
-rect -12 9 -7 12
-rect 17 9 22 12
-rect -16 4 -12 9
+rect -13 11 -6 12
+rect 18 11 25 12
+rect -13 6 -12 11
+rect -7 6 -6 11
+rect -13 5 -6 6
+rect -6 0 1 1
 rect -6 -5 -5 0
-rect 3 -8 8 4
-rect 16 -5 17 0
-rect -16 -13 -12 -8
-rect 3 -13 17 -8
+rect 0 -5 1 0
+rect -6 -6 1 -5
+rect -13 -11 -6 -10
+rect -13 -16 -12 -11
+rect -7 -16 -6 -11
+rect 4 -11 9 6
+rect 18 6 19 11
+rect 24 6 25 11
+rect 18 5 25 6
+rect 12 0 19 1
+rect 12 -5 13 0
+rect 18 -5 19 0
+rect 12 -6 19 -5
+rect 4 -16 19 -11
+rect -13 -17 -6 -16
+<< metal2 >>
+rect -13 10 -6 12
+rect 18 10 25 12
+rect -13 7 25 10
+rect -13 5 -6 7
+rect 18 5 25 7
+rect -6 -6 1 1
+rect 12 -6 19 1
+rect -13 -17 -6 -10
+<< gv1 >>
+rect -12 6 -7 11
+rect 19 6 24 11
+rect -5 -5 0 0
+rect 13 -5 18 0
+rect -12 -16 -7 -11
 << labels >>
-rlabel metal1 5 -3 6 -2 1 out
-rlabel pdcontact -10 6 -9 7 1 Vdd!
-rlabel psubstratepcontact -19 -11 -18 -10 1 GND!
+rlabel pdcontact -10 8 -9 9 1 Vdd!
 rlabel polycontact -3 -3 -2 -2 1 a
-rlabel polycontact 13 -3 14 -2 1 b
+rlabel gv1 -11 -14 -9 -13 1 GND!
+rlabel metal1 6 -3 7 -2 1 out
+rlabel polycontact 15 -3 16 -2 1 b
 << end >>

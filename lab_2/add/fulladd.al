@@ -1,0 +1,11 @@
+= GND! m2_105_22#
+= Vdd! m2_102_44#
+= out xor2_1/out
+= cin xor2_1/b
+= xor2_1/w_n41_n44# xor2_0/w_n41_n44#
+= xor2_1/w_n41_n6# xor2_0/w_n41_n6#
+= xor2_1/a xor2_0/out
+= xor2_1/a xor2_0/m3_15_n13#
+= xor2_1/a m3_53_29#
+= b xor2_0/b
+= a xor2_0/a

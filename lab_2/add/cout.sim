@@ -1,0 +1,41 @@
+| units: 9 tech: scmos format: MIT
+n and2_0/a_0_4# GND! andout 5 5 185 10
+p and2_0/a_0_4# Vdd! andout 5 5 185 26
+p ab Vdd! and2_0/a_0_4# 5 5 143 26
+n acin and2_0/a_0_n13# and2_0/a_0_4# 5 5 158 10
+n ab GND! and2_0/a_0_n13# 5 5 143 10
+p acin and2_0/a_0_4# Vdd! 5 5 158 26
+p b ab Vdd! 5 5 32 28
+p a Vdd! ab 5 5 15 28
+n a GND! nand2_0/a_0_n16# 5 5 15 7
+n b nand2_0/a_0_n16# ab 5 5 32 7
+p cin bcin Vdd! 5 5 116 28
+p b Vdd! bcin 5 5 99 28
+n b GND! nand2_2/a_0_n16# 5 5 99 7
+n cin nand2_2/a_0_n16# bcin 5 5 116 7
+p cin acin Vdd! 5 5 74 28
+p a Vdd! acin 5 5 57 28
+n a GND! nand2_1/a_0_n16# 5 5 57 7
+n cin nand2_1/a_0_n16# acin 5 5 74 7
+p bcin cout Vdd! 5 5 227 28
+p andout Vdd! cout 5 5 210 28
+n andout GND! nand2_3/a_0_n16# 5 5 210 7
+n bcin nand2_3/a_0_n16# cout 5 5 227 7
+R bcin 87
+R ab 78
+R acin 77
+R nand2_3/a_0_n16# 18
+R cout 29
+R Vdd! 346
+R nand2_1/a_0_n16# 18
+R cin 126
+R nand2_2/a_0_n16# 18
+R nand2_0/a_0_n16# 18
+R GND! 165
+R b 127
+R a 126
+C w_n2_35# GND 4.38
+R w_n2_35# 8033
+R and2_0/a_0_n13# 15
+R andout 77
+R and2_0/a_0_4# 72

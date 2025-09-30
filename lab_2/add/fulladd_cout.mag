@@ -1,0 +1,150 @@
+magic
+tech scmos
+timestamp 1759205275
+<< nwell >>
+rect 232 54 461 65
+rect 232 51 240 54
+rect 232 38 235 51
+rect 268 36 461 54
+<< pwell >>
+rect 267 25 368 36
+rect 380 25 384 26
+rect 400 25 461 36
+rect 267 22 461 25
+rect 234 21 461 22
+rect 226 3 227 21
+rect 232 3 461 21
+rect 226 -2 461 3
+<< metal1 >>
+rect 296 58 389 61
+rect 296 46 299 58
+rect 252 22 257 29
+rect 252 2 256 22
+rect 336 18 340 26
+rect 335 11 342 18
+rect 371 2 374 37
+rect 386 36 389 58
+rect 380 16 384 26
+rect 413 16 416 35
+rect 421 32 425 37
+rect 380 12 416 16
+rect 252 -1 374 2
+<< metal2 >>
+rect 4 44 10 49
+rect 102 44 126 47
+rect 220 44 227 47
+rect 232 44 235 47
+rect 263 45 288 48
+rect 304 45 329 48
+rect 348 45 371 48
+rect 389 45 412 48
+rect 169 30 173 35
+rect 242 32 249 39
+rect 284 32 291 39
+rect 326 32 333 39
+rect 344 32 351 39
+rect 4 20 9 25
+rect 105 22 129 25
+rect 220 22 227 25
+rect 232 22 409 25
+rect 335 15 342 18
+rect 431 15 435 37
+rect 335 11 435 15
+<< gv1 >>
+rect 336 12 341 17
+<< metal3 >>
+rect 233 55 331 58
+rect 233 51 240 55
+rect 13 33 18 38
+rect 53 29 60 36
+rect 99 33 104 38
+rect 126 32 133 39
+rect 213 33 218 38
+rect 214 10 217 33
+rect 242 32 249 39
+rect 260 37 267 39
+rect 275 37 278 55
+rect 328 39 331 55
+rect 260 34 278 37
+rect 260 32 267 34
+rect 284 32 291 39
+rect 302 32 309 39
+rect 326 32 333 39
+rect 344 32 351 39
+rect 304 10 307 32
+rect 346 10 349 32
+rect 214 7 227 10
+rect 232 7 349 10
+<< gv2 >>
+rect 54 30 59 35
+rect 127 33 132 38
+rect 243 33 248 38
+rect 261 33 266 38
+rect 285 33 290 38
+rect 303 33 308 38
+rect 327 33 332 38
+rect 345 33 350 38
+<< metal4 >>
+rect 16 62 227 65
+rect 232 62 289 65
+rect 16 39 19 62
+rect 102 55 227 58
+rect 232 55 240 58
+rect 102 39 105 55
+rect 233 51 240 55
+rect 245 39 248 62
+rect 286 39 289 62
+rect 12 32 19 39
+rect 53 29 60 36
+rect 98 32 105 39
+rect 126 32 133 39
+rect 242 32 249 39
+rect 284 32 291 39
+rect 57 16 60 29
+rect 126 16 129 32
+rect 57 13 129 16
+<< gv3 >>
+rect 234 52 239 57
+rect 13 33 18 38
+rect 54 30 59 35
+rect 99 33 104 38
+rect 127 33 132 38
+rect 243 33 248 38
+rect 285 33 290 38
+use nand2  nand2_4
+timestamp 1759202480
+transform 1 0 416 0 1 38
+box -19 -22 28 16
+use nand2  nand2_3
+timestamp 1759202480
+transform 1 0 374 0 1 38
+box -19 -22 28 16
+use nand2  nand2_2
+timestamp 1759202480
+transform 1 0 332 0 1 38
+box -19 -22 28 16
+use nand2  nand2_1
+timestamp 1759202480
+transform 1 0 290 0 1 38
+box -19 -22 28 16
+use nand2  nand2_0
+timestamp 1759202480
+transform 1 0 248 0 1 38
+box -19 -22 28 16
+use xor2  xor2_0
+timestamp 1759199526
+transform 1 0 38 0 1 42
+box -41 -44 81 23
+use xor2  xor2_1
+timestamp 1759199526
+transform 1 0 152 0 1 42
+box -41 -44 81 23
+<< labels >>
+rlabel metal3 14 33 16 36 1 a
+rlabel metal3 215 34 217 37 1 cin
+rlabel metal2 4 44 10 49 1 Vdd!
+rlabel metal2 4 20 9 25 1 GND!
+rlabel metal3 100 34 102 37 1 b
+rlabel metal1 421 32 425 37 1 cout
+rlabel metal2 170 31 172 34 1 sum
+<< end >>

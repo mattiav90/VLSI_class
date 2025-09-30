@@ -1,0 +1,19 @@
+ana a b cin ab acin bcin out1 cout
+h Vdd!
+l GND!
+l a b cin
+s
+s
+h a
+s
+h b 
+s
+h cin 
+s
+l a
+s
+l b 
+s
+l cin
+s
+

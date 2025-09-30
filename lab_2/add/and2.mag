@@ -1,13 +1,10 @@
 magic
 tech scmos
-timestamp 1758926434
-<< error_p >>
-rect -12 4 -10 9
-rect -12 -13 -10 -8
+timestamp 1759193807
 << nwell >>
-rect -16 -2 60 15
+rect -21 -2 60 15
 << pwell >>
-rect -16 -19 60 -2
+rect -21 -19 60 -2
 << ntransistor >>
 rect -5 -13 0 -8
 rect 11 -13 16 -8
@@ -17,7 +14,7 @@ rect -5 4 0 9
 rect 11 4 16 9
 rect 37 4 42 9
 << ndiffusion >>
-rect -7 -13 -5 -8
+rect -9 -13 -5 -8
 rect 0 -13 11 -8
 rect 16 -13 17 -8
 rect 33 -13 37 -8
@@ -30,7 +27,7 @@ rect 16 4 17 9
 rect 33 4 37 9
 rect 42 4 45 9
 << ndcontact >>
-rect -12 -13 -7 -8
+rect -14 -13 -9 -8
 rect 17 -13 22 -8
 rect 28 -13 33 -8
 rect 45 -13 50 -8
@@ -63,8 +60,10 @@ rect 16 9 23 10
 rect -13 4 -12 9
 rect -7 4 -6 9
 rect -13 3 -6 4
-rect -6 -5 -5 0
-rect 3 -8 8 4
+rect -15 -8 -8 -7
+rect -15 -13 -14 -8
+rect -9 -13 -8 -8
+rect 4 -8 8 4
 rect 16 4 17 9
 rect 22 4 23 9
 rect 16 3 23 4
@@ -72,27 +71,39 @@ rect 27 9 34 10
 rect 27 4 28 9
 rect 33 4 34 9
 rect 27 3 34 4
-rect 16 -5 17 0
+rect 20 -3 37 0
+rect 20 -8 23 -3
+rect 4 -13 17 -8
+rect 22 -13 23 -8
 rect 27 -8 34 -7
-rect 3 -13 17 -8
 rect 27 -13 28 -8
 rect 33 -13 34 -8
 rect 45 -8 50 4
+rect -15 -14 -8 -13
 rect 27 -14 34 -13
 << metal2 >>
-rect -13 3 -6 10
-rect 16 3 23 10
-rect 27 3 34 10
-rect 27 -14 34 -7
+rect -13 9 -6 10
+rect 16 9 23 10
+rect 27 9 34 10
+rect -13 4 34 9
+rect -13 3 -6 4
+rect 16 3 23 4
+rect 27 3 34 4
+rect -15 -10 -8 -7
+rect 27 -10 34 -7
+rect -15 -13 34 -10
+rect -15 -14 -8 -13
+rect 27 -14 34 -13
 << gv1 >>
 rect -12 4 -7 9
 rect 17 4 22 9
 rect 28 4 33 9
+rect -14 -13 -9 -8
 rect 28 -13 33 -8
 << labels >>
-rlabel metal1 5 -3 6 -2 1 out
 rlabel pdcontact -10 6 -9 7 1 Vdd!
 rlabel polycontact -3 -3 -2 -2 1 a
 rlabel polycontact 13 -3 14 -2 1 b
-rlabel ndcontact -10 -11 -9 -10 1 GND!
+rlabel metal1 47 -2 49 -1 1 out
+rlabel ndcontact -12 -11 -11 -10 1 GND!
 << end >>

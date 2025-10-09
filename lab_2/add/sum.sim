@@ -1,0 +1,38 @@
+| units: 9 tech: scmos format: MIT
+p b xor2_0/a_9_n29# Vdd! 5 5 91 44
+n b xor2_0/a_31_n21# GND! 5 5 65 24
+n a mid xor2_0/a_31_n21# 5 5 56 24
+p b xor2_0/a_5_0# mid 5 5 39 44
+p xor2_0/a_9_n29# mid xor2_0/a_31_0# 5 5 56 44
+n a GND! xor2_0/a_n20_n20# 5 5 6 25
+n xor2_0/a_9_n29# xor2_0/a_5_n21# mid 5 5 39 24
+p a xor2_0/a_31_0# Vdd! 5 5 65 44
+p xor2_0/a_n20_n20# Vdd! xor2_0/a_5_0# 5 5 30 44
+n xor2_0/a_n20_n20# GND! xor2_0/a_5_n21# 5 5 30 24
+p a Vdd! xor2_0/a_n20_n20# 5 5 6 44
+n b xor2_0/a_9_n29# GND! 5 5 91 25
+p cin xor2_1/a_9_n29# Vdd! 5 5 213 44
+n cin xor2_1/a_31_n21# GND! 5 5 187 24
+n mid out xor2_1/a_31_n21# 5 5 178 24
+p cin xor2_1/a_5_0# out 5 5 161 44
+p xor2_1/a_9_n29# out xor2_1/a_31_0# 5 5 178 44
+n mid GND! xor2_1/a_n20_n20# 5 5 128 25
+n xor2_1/a_9_n29# xor2_1/a_5_n21# out 5 5 161 24
+p mid xor2_1/a_31_0# Vdd! 5 5 187 44
+p xor2_1/a_n20_n20# Vdd! xor2_1/a_5_0# 5 5 152 44
+n xor2_1/a_n20_n20# GND! xor2_1/a_5_n21# 5 5 152 24
+p mid Vdd! xor2_1/a_n20_n20# 5 5 128 44
+n cin xor2_1/a_9_n29# GND! 5 5 213 25
+R b 171
+R a 164
+R out 36
+R xor2_1/a_9_n29# 111
+R cin 171
+R xor2_1/a_n20_n20# 110
+R GND! 263
+R mid 204
+R xor2_0/a_9_n29# 111
+R xor2_0/a_n20_n20# 110
+R Vdd! 294
+C xor2_1/w_n41_n6# GND 4.13
+R xor2_1/w_n41_n6# 7996

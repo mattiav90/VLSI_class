@@ -1,4 +1,4 @@
-timestamp 1760056151
+timestamp 1760061754
 version 8.3
 tech scmos
 style TSMC0.18um(tsmc18)from:t24i
@@ -18,56 +18,50 @@ node "Vdd!" 0 8.544 -239 26 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0 0 0
 node "cout" 0 24.562 218 9 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0 0 0 0 0 0 0
 node "w_n10_n21#" 0 0 -10 -21 pw 0 0 0 0 0 0 0 0 5180 558 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_n247_39#" 30036 1184.66 -247 39 nw 0 0 0 0 2032 524 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "b" "w_n247_39#" 138.624
-cap "m3_n207_n20#" "w_n10_n21#" 30.96
-cap "cin" "w_n10_n21#" 86.64
-cap "cin" "m3_n207_n20#" 32.58
+cap "w_n10_n21#" "cin" 86.64
+cap "w_n247_39#" "b" 138.624
+cap "w_n10_n21#" "m3_n207_n20#" 30.96
+cap "m3_n207_n20#" "cin" 32.58
 subcap "b" -155.091
 subcap "m3_n207_n20#" -151.768
 subcap "a" -5.076
 subcap "GND!" -6.027
 subcap "Vdd!" -8.544
-cap "sum_0/xor2_0/w_n41_n6#" "sum_0/a" 14.514
-cap "sum_0/a" "sum_0/xor2_0/w_n41_n44#" 45.154
-cap "sum_0/xor2_0/w_n41_n6#" "sum_0/xor2_0/a_9_n29#" 33.698
 cap "sum_0/a" "sum_0/b" 53.65
+cap "sum_0/xor2_0/w_n41_n44#" "sum_0/a" 45.154
 subcap "b" -82.84
 subcap "sum" -11.315
+cap "sum_0/xor2_1/a" "m3_n207_n20#" 1073
+cap "sum_0/xor2_1/w_n41_n6#" "sum_0/b" -14.985
 cap "sum_0/w_101_0#" "m3_n207_n20#" 69.786
+cap "sum_0/b" "sum_0/xor2_1/a" 307.39
 cap "sum_0/w_101_0#" "sum_0/b" 3.81
-cap "m3_n207_n20#" "sum_0/xor2_1/a" 1073
-cap "sum_0/xor2_1/a" "sum_0/b" 355.07
-cap "sum_0/xor2_1/w_n41_n6#" "sum_0/xor2_1/a" 14.514
-cap "sum_0/xor2_1/w_n41_n6#" "sum_0/b" -21.814
-cap "sum_0/xor2_1/a_9_n29#" "sum_0/xor2_1/w_n41_n6#" 10.458
-cap "sum_0/xor2_1/a_9_n29#" "sum_0/b" 4.191
+cap "sum_0/b" "sum_0/xor2_1/Vdd!" 12.016
 cap "sum_0/xor2_1/b" "m3_n207_n20#" 7.66429
-cap "sum_0/xor2_1/Vdd!" "sum_0/b" 12.016
-subcap "cin" -57.961
+subcap "cin" -55.747
 subcap "m2_n16_3#" -24.991
-subcap "m2_n18_25#" -24.298
-cap "sum_0/cin" "cout_0/GND!" 14.06
-cap "cout_0/w_n1_n3#" "cout_0/a" 24.408
-cap "cout_0/ab" "cout_0/b" 0.762
-cap "cout_0/b" "sum_0/xor2_1/a" -42.93
-cap "cout_0/a" "sum_0/cin" 45.9857
-cap "cout_0/a" "cout_0/w_n2_35#" -2.84217e-14
-cap "cout_0/ab" "cout_0/GND!" 2.84217e-14
-cap "sum_0/xor2_1/a" "cout_0/Vdd!" -4.488
-cap "cout_0/w_n1_n3#" "cout_0/b" 3.81
-cap "cout_0/w_n1_n3#" "sum_0/cin" 29.034
-cap "cout_0/w_n1_n3#" "cout_0/GND!" 13.093
+subcap "m2_n18_25#" -27.961
 cap "cout_0/b" "cout_0/Vdd!" 6.56
-cap "cout_0/b" "cout_0/w_n2_35#" 26.291
-cap "cout_0/w_n2_35#" "cout_0/Vdd!" 10.114
+cap "cout_0/w_n2_35#" "cout_0/b" 36.773
+cap "cout_0/w_n1_n3#" "cout_0/a" 24.408
 cap "sum_0/cin" "cout_0/Vdd!" 0.816
-cap "sum_0/cin" "cout_0/w_n2_35#" 1.905
-cap "sum_0/xor2_1/a_9_n29#" "cout_0/b" 16.181
-cap "sum_0/xor2_1/a_9_n29#" "cout_0/w_n2_35#" 23.24
-cap "cout_0/cin" "cout_0/w_n2_35#" 3.048
-cap "cout_0/and2_0/GND!" "cout_0/cin" 5.472
+cap "cout_0/w_n2_35#" "sum_0/cin" 1.905
+cap "sum_0/xor2_1/a" "cout_0/b" -35.335
+cap "sum_0/xor2_1/a_9_n29#" "cout_0/Vdd!" 2.84217e-14
+cap "sum_0/cin" "cout_0/a" 45.9857
+cap "cout_0/w_n2_35#" "cout_0/Vdd!" 13.777
+cap "cout_0/w_n1_n3#" "cout_0/b" 3.81
+cap "cout_0/w_n1_n3#" "cout_0/GND!" 13.093
+cap "cout_0/w_n1_n3#" "sum_0/cin" 29.034
+cap "cout_0/w_n2_35#" "cout_0/a" -2.84217e-14
+cap "cout_0/b" "cout_0/ab" 0.762
+cap "sum_0/cin" "cout_0/GND!" 14.06
+cap "cout_0/w_n1_n3#" "sum_0/xor2_1/a_9_n29#" -2.84217e-14
+cap "cout_0/ab" "cout_0/GND!" 2.84217e-14
 cap "cout_0/acin" "cout_0/cin" 1.562
-cap "cout_0/and2_0/a" "cout_0/cin" 6.633
+cap "cout_0/cin" "cout_0/w_n2_35#" 3.048
+cap "cout_0/cin" "cout_0/and2_0/a" 6.633
+cap "cout_0/and2_0/GND!" "cout_0/cin" 5.472
 cap "cout_0/cin" "w_n10_n21#" 1.605
 subcap "cout" -18.752
 merge "sum_0/out" "sum" -11.315 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25 -20 0 0 0 0 0 0 0 0
@@ -78,15 +72,15 @@ merge "sum_0/GND!" "GND!" -6.027 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 
 merge "cout_0/cin" "sum_0/cin" -84.732 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -74 -48 0 0 0 0 0 0
 merge "sum_0/cin" "cin"
 merge "sum_0/Vdd!" "Vdd!" -8.544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
-merge "cout_0/a" "sum_0/a" -169.144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -336 -242 0 0 0 0 0 0
+merge "cout_0/a" "sum_0/a" -154.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -336 -242 0 0 0 0 0 0
 merge "sum_0/a" "a"
 merge "a" "m3_n207_n20#"
-merge "cout_0/b" "sum_0/b" -74.767 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cout_0/b" "sum_0/b" -81.625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sum_0/b" "b"
 merge "sum_0/xor2_1/GND!" "cout_0/GND!" -32.317 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -36 0 0 0 0 0 0 0 0
 merge "cout_0/GND!" "m2_n16_3#"
 merge "cout_0/w_n2_35#" "sum_0/xor2_1/w_n41_n6#" -1051.15 0 0 0 0 -1803 -584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "sum_0/xor2_1/w_n41_n6#" "sum_0/xor2_0/w_n41_n6#"
 merge "sum_0/xor2_0/w_n41_n6#" "w_n247_39#"
-merge "sum_0/xor2_1/Vdd!" "cout_0/Vdd!" -31.624 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54 -44 0 0 0 0 0 0 0 0
+merge "sum_0/xor2_1/Vdd!" "cout_0/Vdd!" -38.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54 -44 0 0 0 0 0 0 0 0
 merge "cout_0/Vdd!" "m2_n18_25#"

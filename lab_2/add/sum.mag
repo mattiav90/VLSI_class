@@ -32,13 +32,13 @@ rect 100 8 107 13
 << gv3 >>
 rect 46 32 51 37
 rect 101 9 106 14
-use xor2  xor2_0
-timestamp 1759199526
-transform 1 0 30 0 1 44
-box -41 -44 81 23
 use xor2  xor2_1
 timestamp 1759199526
 transform 1 0 152 0 1 44
+box -41 -44 81 23
+use xor2  xor2_0
+timestamp 1759199526
+transform 1 0 30 0 1 44
 box -41 -44 81 23
 << labels >>
 rlabel metal3 7 37 8 38 1 a

@@ -1,22 +1,22 @@
 | units: 9 tech: scmos format: MIT
-p b a_12_n27# Vdd! 5 5 61 0
-p b a_8_0# out 5 5 12 0
-p a_12_n27# out a_31_0# 5 5 26 0
-n a_12_n27# a_8_n19# out 5 5 12 -18
-p a_n17_n18# Vdd! a_8_0# 5 5 3 0
+p b a_9_n29# Vdd! 5 5 61 0
+n b a_31_n21# GND! 5 5 35 -20
+n a out a_31_n21# 5 5 26 -20
+p b a_5_0# out 5 5 9 0
+p a_9_n29# out a_31_0# 5 5 26 0
+n a GND! a_n20_n20# 5 5 -24 -19
+n a_9_n29# a_5_n21# out 5 5 9 -20
 p a a_31_0# Vdd! 5 5 35 0
-n b a_12_n27# GND! 5 5 61 -17
-n a GND! a_n17_n18# 5 5 -21 -17
-n a_n17_n18# GND! a_8_n19# 5 5 3 -18
-p a Vdd! a_n17_n18# 5 5 -21 0
-n b a_31_n19# GND! 5 5 35 -18
-n a out a_31_n19# 5 5 26 -18
+p a_n20_n20# Vdd! a_5_0# 5 5 0 0
+n a_n20_n20# GND! a_5_n21# 5 5 0 -20
+p a Vdd! a_n20_n20# 5 5 -24 0
+n b a_9_n29# GND! 5 5 61 -19
 R GND! 124
-R out 27
-R a_12_n27# 108
-R b 165
-R a_n17_n18# 107
-R a 158
-R Vdd! 139
-C w_n38_n6# GND 2.01
-R w_n38_n6# 3882
+R out 36
+R a_9_n29# 109
+R b 166
+R a_n20_n20# 110
+R a 164
+R Vdd! 140
+C w_n41_n6# GND 2.06
+R w_n41_n6# 3980

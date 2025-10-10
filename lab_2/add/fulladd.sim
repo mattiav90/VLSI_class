@@ -1,0 +1,169 @@
+| units: 9 tech: scmos format: MIT
+p b0 fulladd1_b_0/xor2_0/a_9_n29# Vdd! 5 5 63 28
+n b0 fulladd1_b_0/xor2_0/a_31_n21# GND! 5 5 37 8
+n cin fulladd1_b_0/xor2_0/out fulladd1_b_0/xor2_0/a_31_n21# 5 5 28 8
+p b0 fulladd1_b_0/xor2_0/a_5_0# fulladd1_b_0/xor2_0/out 5 5 11 28
+p fulladd1_b_0/xor2_0/a_9_n29# fulladd1_b_0/xor2_0/out fulladd1_b_0/xor2_0/a_31_0# 5 5 28 28
+n cin GND! fulladd1_b_0/xor2_0/a_n20_n20# 5 5 -22 9
+n fulladd1_b_0/xor2_0/a_9_n29# fulladd1_b_0/xor2_0/a_5_n21# fulladd1_b_0/xor2_0/out 5 5 11 8
+p cin fulladd1_b_0/xor2_0/a_31_0# Vdd! 5 5 37 28
+p fulladd1_b_0/xor2_0/a_n20_n20# Vdd! fulladd1_b_0/xor2_0/a_5_0# 5 5 2 28
+n fulladd1_b_0/xor2_0/a_n20_n20# GND! fulladd1_b_0/xor2_0/a_5_n21# 5 5 2 8
+p cin Vdd! fulladd1_b_0/xor2_0/a_n20_n20# 5 5 -22 28
+n b0 fulladd1_b_0/xor2_0/a_9_n29# GND! 5 5 63 9
+n fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# GND! fulladd1_b_0/fulladd1_0/cout_0/andout 5 5 506 12
+p fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# Vdd! fulladd1_b_0/fulladd1_0/cout_0/andout 5 5 506 28
+p fulladd1_b_0/fulladd1_0/cout_0/ab Vdd! fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# 5 5 464 28
+n fulladd1_b_0/fulladd1_0/cout_0/acin fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_n13# fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# 5 5 479 12
+n fulladd1_b_0/fulladd1_0/cout_0/ab GND! fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_n13# 5 5 464 12
+p fulladd1_b_0/fulladd1_0/cout_0/acin fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# Vdd! 5 5 479 28
+p fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/cout_0/ab Vdd! 5 5 353 30
+p a0 Vdd! fulladd1_b_0/fulladd1_0/cout_0/ab 5 5 336 30
+n a0 GND! fulladd1_b_0/fulladd1_0/cout_0/nand2_0/a_0_n16# 5 5 336 9
+n fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/cout_0/nand2_0/a_0_n16# fulladd1_b_0/fulladd1_0/cout_0/ab 5 5 353 9
+p cin fulladd1_b_0/fulladd1_0/cout_0/acin Vdd! 5 5 395 30
+p a0 Vdd! fulladd1_b_0/fulladd1_0/cout_0/acin 5 5 378 30
+n a0 GND! fulladd1_b_0/fulladd1_0/cout_0/nand2_1/a_0_n16# 5 5 378 9
+n cin fulladd1_b_0/fulladd1_0/cout_0/nand2_1/a_0_n16# fulladd1_b_0/fulladd1_0/cout_0/acin 5 5 395 9
+p cin fulladd1_b_0/fulladd1_0/cout_0/bcin Vdd! 5 5 437 30
+p fulladd1_b_0/xor2_0/out Vdd! fulladd1_b_0/fulladd1_0/cout_0/bcin 5 5 420 30
+n fulladd1_b_0/xor2_0/out GND! fulladd1_b_0/fulladd1_0/cout_0/nand2_2/a_0_n16# 5 5 420 9
+n cin fulladd1_b_0/fulladd1_0/cout_0/nand2_2/a_0_n16# fulladd1_b_0/fulladd1_0/cout_0/bcin 5 5 437 9
+p fulladd1_b_0/fulladd1_0/cout_0/bcin cout0 Vdd! 5 5 548 30
+p fulladd1_b_0/fulladd1_0/cout_0/andout Vdd! cout0 5 5 531 30
+n fulladd1_b_0/fulladd1_0/cout_0/andout GND! fulladd1_b_0/fulladd1_0/cout_0/nand2_3/a_0_n16# 5 5 531 9
+n fulladd1_b_0/fulladd1_0/cout_0/bcin fulladd1_b_0/fulladd1_0/cout_0/nand2_3/a_0_n16# cout0 5 5 548 9
+p fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_9_n29# Vdd! 5 5 178 28
+n fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_31_n21# GND! 5 5 152 8
+n a0 fulladd1_b_0/fulladd1_0/sum_0/mid fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_31_n21# 5 5 143 8
+p fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_5_0# fulladd1_b_0/fulladd1_0/sum_0/mid 5 5 126 28
+p fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_b_0/fulladd1_0/sum_0/mid fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_31_0# 5 5 143 28
+n a0 GND! fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 93 9
+n fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_5_n21# fulladd1_b_0/fulladd1_0/sum_0/mid 5 5 126 8
+p a0 fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_31_0# Vdd! 5 5 152 28
+p fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_n20_n20# Vdd! fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_5_0# 5 5 117 28
+n fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_n20_n20# GND! fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_5_n21# 5 5 117 8
+p a0 Vdd! fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 93 28
+n fulladd1_b_0/xor2_0/out fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_9_n29# GND! 5 5 178 9
+p cin fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_9_n29# Vdd! 5 5 300 28
+n cin fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_31_n21# GND! 5 5 274 8
+n fulladd1_b_0/fulladd1_0/sum_0/mid sum0 fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_31_n21# 5 5 265 8
+p cin fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_5_0# sum0 5 5 248 28
+p fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_9_n29# sum0 fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_31_0# 5 5 265 28
+n fulladd1_b_0/fulladd1_0/sum_0/mid GND! fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 215 9
+n fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_9_n29# fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_5_n21# sum0 5 5 248 8
+p fulladd1_b_0/fulladd1_0/sum_0/mid fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_31_0# Vdd! 5 5 274 28
+p fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_n20_n20# Vdd! fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_5_0# 5 5 239 28
+n fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_n20_n20# GND! fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_5_n21# 5 5 239 8
+p fulladd1_b_0/fulladd1_0/sum_0/mid Vdd! fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 215 28
+n cin fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_9_n29# GND! 5 5 300 9
+p b1 fulladd1_b_1/xor2_0/a_9_n29# Vdd! 5 5 63 96
+n b1 fulladd1_b_1/xor2_0/a_31_n21# GND! 5 5 37 76
+n cin fulladd1_b_1/xor2_0/out fulladd1_b_1/xor2_0/a_31_n21# 5 5 28 76
+p b1 fulladd1_b_1/xor2_0/a_5_0# fulladd1_b_1/xor2_0/out 5 5 11 96
+p fulladd1_b_1/xor2_0/a_9_n29# fulladd1_b_1/xor2_0/out fulladd1_b_1/xor2_0/a_31_0# 5 5 28 96
+n cin GND! fulladd1_b_1/xor2_0/a_n20_n20# 5 5 -22 77
+n fulladd1_b_1/xor2_0/a_9_n29# fulladd1_b_1/xor2_0/a_5_n21# fulladd1_b_1/xor2_0/out 5 5 11 76
+p cin fulladd1_b_1/xor2_0/a_31_0# Vdd! 5 5 37 96
+p fulladd1_b_1/xor2_0/a_n20_n20# Vdd! fulladd1_b_1/xor2_0/a_5_0# 5 5 2 96
+n fulladd1_b_1/xor2_0/a_n20_n20# GND! fulladd1_b_1/xor2_0/a_5_n21# 5 5 2 76
+p cin Vdd! fulladd1_b_1/xor2_0/a_n20_n20# 5 5 -22 96
+n b1 fulladd1_b_1/xor2_0/a_9_n29# GND! 5 5 63 77
+n fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# GND! fulladd1_b_1/fulladd1_0/cout_0/andout 5 5 506 80
+p fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# Vdd! fulladd1_b_1/fulladd1_0/cout_0/andout 5 5 506 96
+p fulladd1_b_1/fulladd1_0/cout_0/ab Vdd! fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# 5 5 464 96
+n fulladd1_b_1/fulladd1_0/cout_0/acin fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_n13# fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# 5 5 479 80
+n fulladd1_b_1/fulladd1_0/cout_0/ab GND! fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_n13# 5 5 464 80
+p fulladd1_b_1/fulladd1_0/cout_0/acin fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# Vdd! 5 5 479 96
+p fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/cout_0/ab Vdd! 5 5 353 98
+p a1 Vdd! fulladd1_b_1/fulladd1_0/cout_0/ab 5 5 336 98
+n a1 GND! fulladd1_b_1/fulladd1_0/cout_0/nand2_0/a_0_n16# 5 5 336 77
+n fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/cout_0/nand2_0/a_0_n16# fulladd1_b_1/fulladd1_0/cout_0/ab 5 5 353 77
+p cout0 fulladd1_b_1/fulladd1_0/cout_0/acin Vdd! 5 5 395 98
+p a1 Vdd! fulladd1_b_1/fulladd1_0/cout_0/acin 5 5 378 98
+n a1 GND! fulladd1_b_1/fulladd1_0/cout_0/nand2_1/a_0_n16# 5 5 378 77
+n cout0 fulladd1_b_1/fulladd1_0/cout_0/nand2_1/a_0_n16# fulladd1_b_1/fulladd1_0/cout_0/acin 5 5 395 77
+p cout0 fulladd1_b_1/fulladd1_0/cout_0/bcin Vdd! 5 5 437 98
+p fulladd1_b_1/xor2_0/out Vdd! fulladd1_b_1/fulladd1_0/cout_0/bcin 5 5 420 98
+n fulladd1_b_1/xor2_0/out GND! fulladd1_b_1/fulladd1_0/cout_0/nand2_2/a_0_n16# 5 5 420 77
+n cout0 fulladd1_b_1/fulladd1_0/cout_0/nand2_2/a_0_n16# fulladd1_b_1/fulladd1_0/cout_0/bcin 5 5 437 77
+p fulladd1_b_1/fulladd1_0/cout_0/bcin cout1 Vdd! 5 5 548 98
+p fulladd1_b_1/fulladd1_0/cout_0/andout Vdd! cout1 5 5 531 98
+n fulladd1_b_1/fulladd1_0/cout_0/andout GND! fulladd1_b_1/fulladd1_0/cout_0/nand2_3/a_0_n16# 5 5 531 77
+n fulladd1_b_1/fulladd1_0/cout_0/bcin fulladd1_b_1/fulladd1_0/cout_0/nand2_3/a_0_n16# cout1 5 5 548 77
+p fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_9_n29# Vdd! 5 5 178 96
+n fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_31_n21# GND! 5 5 152 76
+n a1 fulladd1_b_1/fulladd1_0/sum_0/mid fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_31_n21# 5 5 143 76
+p fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_5_0# fulladd1_b_1/fulladd1_0/sum_0/mid 5 5 126 96
+p fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_b_1/fulladd1_0/sum_0/mid fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_31_0# 5 5 143 96
+n a1 GND! fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 93 77
+n fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_5_n21# fulladd1_b_1/fulladd1_0/sum_0/mid 5 5 126 76
+p a1 fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_31_0# Vdd! 5 5 152 96
+p fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_n20_n20# Vdd! fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_5_0# 5 5 117 96
+n fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_n20_n20# GND! fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_5_n21# 5 5 117 76
+p a1 Vdd! fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 93 96
+n fulladd1_b_1/xor2_0/out fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_9_n29# GND! 5 5 178 77
+p cout0 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_9_n29# Vdd! 5 5 300 96
+n cout0 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_31_n21# GND! 5 5 274 76
+n fulladd1_b_1/fulladd1_0/sum_0/mid sum1 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_31_n21# 5 5 265 76
+p cout0 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_5_0# sum1 5 5 248 96
+p fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_9_n29# sum1 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_31_0# 5 5 265 96
+n fulladd1_b_1/fulladd1_0/sum_0/mid GND! fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 215 77
+n fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_9_n29# fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_5_n21# sum1 5 5 248 76
+p fulladd1_b_1/fulladd1_0/sum_0/mid fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_31_0# Vdd! 5 5 274 96
+p fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_n20_n20# Vdd! fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_5_0# 5 5 239 96
+n fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_n20_n20# GND! fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_5_n21# 5 5 239 76
+p fulladd1_b_1/fulladd1_0/sum_0/mid Vdd! fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 215 96
+n cout0 fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_9_n29# GND! 5 5 300 77
+C cin fulladd1_b_0/xor2_0/w_n41_n44# 2.45
+R fulladd1_b_1/xor2_0/out 357
+R a1 311
+R sum1 36
+R fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_9_n29# 109
+R fulladd1_b_1/fulladd1_0/sum_0/xor2_1/a_n20_n20# 110
+R fulladd1_b_1/fulladd1_0/sum_0/mid 203
+R fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_9_n29# 109
+R fulladd1_b_1/fulladd1_0/sum_0/xor2_0/a_n20_n20# 110
+R fulladd1_b_1/fulladd1_0/cout_0/bcin 87
+R fulladd1_b_1/fulladd1_0/cout_0/ab 78
+R fulladd1_b_1/fulladd1_0/cout_0/acin 77
+R fulladd1_b_1/fulladd1_0/cout_0/nand2_3/a_0_n16# 18
+R cout1 30
+R fulladd1_b_1/fulladd1_0/cout_0/nand2_2/a_0_n16# 18
+C fulladd1_b_1/w_n121_51# GND 12.11
+R fulladd1_b_1/w_n121_51# 19396
+R fulladd1_b_1/fulladd1_0/cout_0/nand2_1/a_0_n16# 18
+R cout0 347
+R fulladd1_b_1/fulladd1_0/cout_0/nand2_0/a_0_n16# 18
+R fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_n13# 15
+R fulladd1_b_1/fulladd1_0/cout_0/andout 77
+R fulladd1_b_1/fulladd1_0/cout_0/and2_0/a_0_4# 72
+R fulladd1_b_1/xor2_0/a_9_n29# 109
+R b1 166
+R fulladd1_b_1/xor2_0/a_n20_n20# 110
+R fulladd1_b_0/xor2_0/out 357
+R a0 311
+R sum0 36
+R fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_9_n29# 109
+R fulladd1_b_0/fulladd1_0/sum_0/xor2_1/a_n20_n20# 110
+R fulladd1_b_0/fulladd1_0/sum_0/mid 203
+R fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_9_n29# 109
+R fulladd1_b_0/fulladd1_0/sum_0/xor2_0/a_n20_n20# 110
+R Vdd! 1647
+R fulladd1_b_0/fulladd1_0/cout_0/bcin 87
+R fulladd1_b_0/fulladd1_0/cout_0/ab 78
+R fulladd1_b_0/fulladd1_0/cout_0/acin 77
+R fulladd1_b_0/fulladd1_0/cout_0/nand2_3/a_0_n16# 18
+R fulladd1_b_0/fulladd1_0/cout_0/nand2_2/a_0_n16# 18
+R GND! 1183
+C fulladd1_b_0/w_n121_51# GND 12.11
+R fulladd1_b_0/w_n121_51# 19396
+R fulladd1_b_0/fulladd1_0/cout_0/nand2_1/a_0_n16# 18
+R cin 685
+R fulladd1_b_0/fulladd1_0/cout_0/nand2_0/a_0_n16# 18
+R fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_n13# 15
+R fulladd1_b_0/fulladd1_0/cout_0/andout 77
+R fulladd1_b_0/fulladd1_0/cout_0/and2_0/a_0_4# 72
+R fulladd1_b_0/xor2_0/a_9_n29# 109
+R b0 166
+R fulladd1_b_0/xor2_0/a_n20_n20# 110

@@ -1,4 +1,4 @@
-timestamp 1760051112
+timestamp 1760061754
 version 8.3
 tech scmos
 style TSMC0.18um(tsmc18)from:t24i
@@ -20,11 +20,11 @@ node "Vdd!" 0 17.619 -5 45 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 28 0 0 0 0 0 0 
 node "w_224_0#" 0 0 224 0 pw 0 0 0 0 0 0 0 0 54 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_101_0#" 0 0 101 0 pw 0 0 0 0 0 0 0 0 195 64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_99_15#" 0 0 99 15 pw 0 0 0 0 0 0 0 0 16 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_101_0#" "mid" 9.504
+cap "m2_90_34#" "b" 21.609
 cap "m2_4_34#" "a" 21.609
 cap "m2_90_34#" "m2_96_24#" 7.27857
-cap "w_101_0#" "mid" 9.504
 cap "w_99_15#" "mid" 2.522
-cap "m2_90_34#" "b" 21.609
 subcap "b" -70.325
 subcap "mid" -111.499
 subcap "a" -6.15
@@ -34,21 +34,21 @@ subcap "m2_90_34#" -81.056
 subcap "m2_4_34#" -16.881
 subcap "m2_97_46#" -44.267
 subcap "Vdd!" -17.619
-cap "xor2_0/out" "xor2_0/a" 65.802
-cap "xor2_0/w_n41_n44#" "xor2_0/out" 39.297
+cap "xor2_0/w_n41_n6#" "xor2_0/out" 1.524
 cap "xor2_0/b" "xor2_0/out" 75.342
 cap "xor2_0/out" "xor2_0/GND!" 13.12
-cap "xor2_0/w_n41_n6#" "xor2_0/out" 1.524
-cap "xor2_0/out" "xor2_0/a_9_n29#" 7.854
+cap "xor2_0/a" "xor2_0/out" 65.802
+cap "xor2_0/w_n41_n44#" "xor2_0/out" 39.297
+cap "xor2_0/a_9_n29#" "xor2_0/out" 7.854
 subcap "b" -4.674
 subcap "m2_96_24#" -32.057
 subcap "out" -17.619
 subcap "m2_90_34#" -15.405
 subcap "m2_97_46#" -32.057
-cap "xor2_0/b" "xor2_1/GND!" -7.27857
 cap "xor2_1/w_n41_n44#" "xor2_1/GND!" 11.898
+cap "xor2_1/w_n41_n6#" "xor2_1/Vdd!" 11.898
+cap "xor2_0/b" "xor2_1/GND!" -7.27857
 cap "xor2_1/w_n41_n44#" "xor2_1/a" 31.048
-cap "xor2_1/Vdd!" "xor2_1/w_n41_n6#" 11.898
 merge "xor2_1/GND!" "xor2_0/GND!" -59.219 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -97 -86 0 0 0 0 0 0 0 0
 merge "xor2_0/GND!" "GND!"
 merge "GND!" "m2_96_24#"

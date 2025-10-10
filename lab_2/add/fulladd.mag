@@ -1,0 +1,51 @@
+magic
+tech scmos
+timestamp 1760062777
+<< metal1 >>
+rect 540 86 543 92
+rect 540 18 543 24
+<< metal2 >>
+rect 254 83 261 90
+rect 254 15 261 22
+<< metal3 >>
+rect 62 86 69 93
+rect 91 86 98 93
+rect -33 29 -26 36
+rect 62 19 68 24
+rect 92 19 98 24
+rect 522 7 529 14
+<< metal4 >>
+rect 62 51 69 52
+rect -22 48 69 51
+rect 62 45 69 48
+rect -24 18 -17 25
+<< metal5 >>
+rect 62 51 69 52
+rect 62 48 305 51
+rect 62 45 69 48
+rect 302 25 305 48
+rect 299 18 306 25
+<< gv4 >>
+rect 63 46 68 51
+use fulladd1_b  fulladd1_b_0
+timestamp 1760062067
+transform 1 0 82 0 1 -4
+box -121 -12 490 56
+use fulladd1_b  fulladd1_b_1
+timestamp 1760062067
+transform 1 0 82 0 1 64
+box -121 -12 490 56
+<< labels >>
+rlabel metal4 -21 20 -20 22 1 ctrl
+rlabel metal3 -31 32 -29 33 1 Vdd!
+rlabel metal3 525 10 526 11 1 GND!
+rlabel metal3 65 21 66 22 1 b0
+rlabel metal3 94 21 95 22 1 a0
+rlabel metal5 302 21 303 23 1 cin
+rlabel metal2 257 18 258 19 1 sum0
+rlabel metal1 540 18 543 24 1 cout0
+rlabel metal3 62 86 69 93 1 b1
+rlabel metal3 91 86 98 93 1 a1
+rlabel metal2 254 83 261 90 1 sum1
+rlabel metal1 540 86 543 92 1 cout1
+<< end >>

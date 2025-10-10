@@ -1,0 +1,87 @@
+| units: 9 tech: scmos format: MIT
+p b xor2_0/a_9_n29# Vdd! 5 5 -19 32
+n b xor2_0/a_31_n21# GND! 5 5 -45 12
+n ctrl xor2_0/out xor2_0/a_31_n21# 5 5 -54 12
+p b xor2_0/a_5_0# xor2_0/out 5 5 -71 32
+p xor2_0/a_9_n29# xor2_0/out xor2_0/a_31_0# 5 5 -54 32
+n ctrl GND! xor2_0/a_n20_n20# 5 5 -104 13
+n xor2_0/a_9_n29# xor2_0/a_5_n21# xor2_0/out 5 5 -71 12
+p ctrl xor2_0/a_31_0# Vdd! 5 5 -45 32
+p xor2_0/a_n20_n20# Vdd! xor2_0/a_5_0# 5 5 -80 32
+n xor2_0/a_n20_n20# GND! xor2_0/a_5_n21# 5 5 -80 12
+p ctrl Vdd! xor2_0/a_n20_n20# 5 5 -104 32
+n b xor2_0/a_9_n29# GND! 5 5 -19 13
+n fulladd1_0/cout_0/and2_0/a_0_4# GND! fulladd1_0/cout_0/andout 5 5 424 16
+p fulladd1_0/cout_0/and2_0/a_0_4# Vdd! fulladd1_0/cout_0/andout 5 5 424 32
+p fulladd1_0/cout_0/ab Vdd! fulladd1_0/cout_0/and2_0/a_0_4# 5 5 382 32
+n fulladd1_0/cout_0/acin fulladd1_0/cout_0/and2_0/a_0_n13# fulladd1_0/cout_0/and2_0/a_0_4# 5 5 397 16
+n fulladd1_0/cout_0/ab GND! fulladd1_0/cout_0/and2_0/a_0_n13# 5 5 382 16
+p fulladd1_0/cout_0/acin fulladd1_0/cout_0/and2_0/a_0_4# Vdd! 5 5 397 32
+p xor2_0/out fulladd1_0/cout_0/ab Vdd! 5 5 271 34
+p a Vdd! fulladd1_0/cout_0/ab 5 5 254 34
+n a GND! fulladd1_0/cout_0/nand2_0/a_0_n16# 5 5 254 13
+n xor2_0/out fulladd1_0/cout_0/nand2_0/a_0_n16# fulladd1_0/cout_0/ab 5 5 271 13
+p cin fulladd1_0/cout_0/acin Vdd! 5 5 313 34
+p a Vdd! fulladd1_0/cout_0/acin 5 5 296 34
+n a GND! fulladd1_0/cout_0/nand2_1/a_0_n16# 5 5 296 13
+n cin fulladd1_0/cout_0/nand2_1/a_0_n16# fulladd1_0/cout_0/acin 5 5 313 13
+p cin fulladd1_0/cout_0/bcin Vdd! 5 5 355 34
+p xor2_0/out Vdd! fulladd1_0/cout_0/bcin 5 5 338 34
+n xor2_0/out GND! fulladd1_0/cout_0/nand2_2/a_0_n16# 5 5 338 13
+n cin fulladd1_0/cout_0/nand2_2/a_0_n16# fulladd1_0/cout_0/bcin 5 5 355 13
+p fulladd1_0/cout_0/bcin cout Vdd! 5 5 466 34
+p fulladd1_0/cout_0/andout Vdd! cout 5 5 449 34
+n fulladd1_0/cout_0/andout GND! fulladd1_0/cout_0/nand2_3/a_0_n16# 5 5 449 13
+n fulladd1_0/cout_0/bcin fulladd1_0/cout_0/nand2_3/a_0_n16# cout 5 5 466 13
+p xor2_0/out fulladd1_0/sum_0/xor2_0/a_9_n29# Vdd! 5 5 96 32
+n xor2_0/out fulladd1_0/sum_0/xor2_0/a_31_n21# GND! 5 5 70 12
+n a fulladd1_0/sum_0/mid fulladd1_0/sum_0/xor2_0/a_31_n21# 5 5 61 12
+p xor2_0/out fulladd1_0/sum_0/xor2_0/a_5_0# fulladd1_0/sum_0/mid 5 5 44 32
+p fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_0/sum_0/mid fulladd1_0/sum_0/xor2_0/a_31_0# 5 5 61 32
+n a GND! fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 11 13
+n fulladd1_0/sum_0/xor2_0/a_9_n29# fulladd1_0/sum_0/xor2_0/a_5_n21# fulladd1_0/sum_0/mid 5 5 44 12
+p a fulladd1_0/sum_0/xor2_0/a_31_0# Vdd! 5 5 70 32
+p fulladd1_0/sum_0/xor2_0/a_n20_n20# Vdd! fulladd1_0/sum_0/xor2_0/a_5_0# 5 5 35 32
+n fulladd1_0/sum_0/xor2_0/a_n20_n20# GND! fulladd1_0/sum_0/xor2_0/a_5_n21# 5 5 35 12
+p a Vdd! fulladd1_0/sum_0/xor2_0/a_n20_n20# 5 5 11 32
+n xor2_0/out fulladd1_0/sum_0/xor2_0/a_9_n29# GND! 5 5 96 13
+p cin fulladd1_0/sum_0/xor2_1/a_9_n29# Vdd! 5 5 218 32
+n cin fulladd1_0/sum_0/xor2_1/a_31_n21# GND! 5 5 192 12
+n fulladd1_0/sum_0/mid sum fulladd1_0/sum_0/xor2_1/a_31_n21# 5 5 183 12
+p cin fulladd1_0/sum_0/xor2_1/a_5_0# sum 5 5 166 32
+p fulladd1_0/sum_0/xor2_1/a_9_n29# sum fulladd1_0/sum_0/xor2_1/a_31_0# 5 5 183 32
+n fulladd1_0/sum_0/mid GND! fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 133 13
+n fulladd1_0/sum_0/xor2_1/a_9_n29# fulladd1_0/sum_0/xor2_1/a_5_n21# sum 5 5 166 12
+p fulladd1_0/sum_0/mid fulladd1_0/sum_0/xor2_1/a_31_0# Vdd! 5 5 192 32
+p fulladd1_0/sum_0/xor2_1/a_n20_n20# Vdd! fulladd1_0/sum_0/xor2_1/a_5_0# 5 5 157 32
+n fulladd1_0/sum_0/xor2_1/a_n20_n20# GND! fulladd1_0/sum_0/xor2_1/a_5_n21# 5 5 157 12
+p fulladd1_0/sum_0/mid Vdd! fulladd1_0/sum_0/xor2_1/a_n20_n20# 5 5 133 32
+n cin fulladd1_0/sum_0/xor2_1/a_9_n29# GND! 5 5 218 13
+R xor2_0/out 362
+R a 311
+R sum 36
+R fulladd1_0/sum_0/xor2_1/a_9_n29# 111
+R fulladd1_0/sum_0/xor2_1/a_n20_n20# 110
+R fulladd1_0/sum_0/mid 203
+R fulladd1_0/sum_0/xor2_0/a_9_n29# 111
+R fulladd1_0/sum_0/xor2_0/a_n20_n20# 110
+R Vdd! 811
+R fulladd1_0/cout_0/bcin 87
+R fulladd1_0/cout_0/ab 78
+R fulladd1_0/cout_0/acin 77
+R fulladd1_0/cout_0/nand2_3/a_0_n16# 18
+R cout 29
+R fulladd1_0/cout_0/nand2_2/a_0_n16# 18
+R GND! 583
+C w_n121_51# GND 12.11
+R w_n121_51# 19396
+R fulladd1_0/cout_0/nand2_1/a_0_n16# 18
+R cin 318
+R fulladd1_0/cout_0/nand2_0/a_0_n16# 18
+R fulladd1_0/cout_0/and2_0/a_0_n13# 15
+R fulladd1_0/cout_0/andout 77
+R fulladd1_0/cout_0/and2_0/a_0_4# 72
+R xor2_0/a_9_n29# 111
+R b 171
+R xor2_0/a_n20_n20# 110
+R ctrl 164

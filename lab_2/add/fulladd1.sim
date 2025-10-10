@@ -1,0 +1,71 @@
+| units: 9 tech: scmos format: MIT
+n cout_0/and2_0/a_0_4# GND! cout_0/andout 5 5 183 7
+p cout_0/and2_0/a_0_4# Vdd! cout_0/andout 5 5 183 23
+p cout_0/ab Vdd! cout_0/and2_0/a_0_4# 5 5 141 23
+n cout_0/acin cout_0/and2_0/a_0_n13# cout_0/and2_0/a_0_4# 5 5 156 7
+n cout_0/ab GND! cout_0/and2_0/a_0_n13# 5 5 141 7
+p cout_0/acin cout_0/and2_0/a_0_4# Vdd! 5 5 156 23
+p b cout_0/ab Vdd! 5 5 30 25
+p a Vdd! cout_0/ab 5 5 13 25
+n a GND! cout_0/nand2_0/a_0_n16# 5 5 13 4
+n b cout_0/nand2_0/a_0_n16# cout_0/ab 5 5 30 4
+p cin cout_0/acin Vdd! 5 5 72 25
+p a Vdd! cout_0/acin 5 5 55 25
+n a GND! cout_0/nand2_1/a_0_n16# 5 5 55 4
+n cin cout_0/nand2_1/a_0_n16# cout_0/acin 5 5 72 4
+p cin cout_0/bcin Vdd! 5 5 114 25
+p b Vdd! cout_0/bcin 5 5 97 25
+n b GND! cout_0/nand2_2/a_0_n16# 5 5 97 4
+n cin cout_0/nand2_2/a_0_n16# cout_0/bcin 5 5 114 4
+p cout_0/bcin cout Vdd! 5 5 225 25
+p cout_0/andout Vdd! cout 5 5 208 25
+n cout_0/andout GND! cout_0/nand2_3/a_0_n16# 5 5 208 4
+n cout_0/bcin cout_0/nand2_3/a_0_n16# cout 5 5 225 4
+p b sum_0/xor2_0/a_9_n29# Vdd! 5 5 -145 23
+n b sum_0/xor2_0/a_31_n21# GND! 5 5 -171 3
+n a sum_0/mid sum_0/xor2_0/a_31_n21# 5 5 -180 3
+p b sum_0/xor2_0/a_5_0# sum_0/mid 5 5 -197 23
+p sum_0/xor2_0/a_9_n29# sum_0/mid sum_0/xor2_0/a_31_0# 5 5 -180 23
+n a GND! sum_0/xor2_0/a_n20_n20# 5 5 -230 4
+n sum_0/xor2_0/a_9_n29# sum_0/xor2_0/a_5_n21# sum_0/mid 5 5 -197 3
+p a sum_0/xor2_0/a_31_0# Vdd! 5 5 -171 23
+p sum_0/xor2_0/a_n20_n20# Vdd! sum_0/xor2_0/a_5_0# 5 5 -206 23
+n sum_0/xor2_0/a_n20_n20# GND! sum_0/xor2_0/a_5_n21# 5 5 -206 3
+p a Vdd! sum_0/xor2_0/a_n20_n20# 5 5 -230 23
+n b sum_0/xor2_0/a_9_n29# GND! 5 5 -145 4
+p cin sum_0/xor2_1/a_9_n29# Vdd! 5 5 -23 23
+n cin sum_0/xor2_1/a_31_n21# GND! 5 5 -49 3
+n sum_0/mid sum sum_0/xor2_1/a_31_n21# 5 5 -58 3
+p cin sum_0/xor2_1/a_5_0# sum 5 5 -75 23
+p sum_0/xor2_1/a_9_n29# sum sum_0/xor2_1/a_31_0# 5 5 -58 23
+n sum_0/mid GND! sum_0/xor2_1/a_n20_n20# 5 5 -108 4
+n sum_0/xor2_1/a_9_n29# sum_0/xor2_1/a_5_n21# sum 5 5 -75 3
+p sum_0/mid sum_0/xor2_1/a_31_0# Vdd! 5 5 -49 23
+p sum_0/xor2_1/a_n20_n20# Vdd! sum_0/xor2_1/a_5_0# 5 5 -84 23
+n sum_0/xor2_1/a_n20_n20# GND! sum_0/xor2_1/a_5_n21# 5 5 -84 3
+p sum_0/mid Vdd! sum_0/xor2_1/a_n20_n20# 5 5 -108 23
+n cin sum_0/xor2_1/a_9_n29# GND! 5 5 -23 4
+R b 321
+R a 311
+R sum 36
+R sum_0/xor2_1/a_9_n29# 111
+R sum_0/xor2_1/a_n20_n20# 110
+R sum_0/mid 203
+R sum_0/xor2_0/a_9_n29# 111
+R sum_0/xor2_0/a_n20_n20# 110
+R Vdd! 656
+R cout_0/bcin 87
+R cout_0/ab 78
+R cout_0/acin 77
+R cout_0/nand2_3/a_0_n16# 18
+R cout 29
+R cout_0/nand2_2/a_0_n16# 18
+R GND! 444
+C w_n247_39# GND 9.69
+R w_n247_39# 12587
+R cout_0/nand2_1/a_0_n16# 18
+R cin 318
+R cout_0/nand2_0/a_0_n16# 18
+R cout_0/and2_0/a_0_n13# 15
+R cout_0/andout 77
+R cout_0/and2_0/a_0_4# 72

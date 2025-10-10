@@ -1,0 +1,56 @@
+magic
+tech scmos
+timestamp 1760056151
+<< nwell >>
+rect -121 51 -1 56
+<< metal1 >>
+rect 458 20 462 30
+<< metal2 >>
+rect -115 33 -108 40
+rect -13 34 9 37
+rect -65 19 -58 26
+rect 172 19 179 26
+rect -115 9 -108 16
+rect -12 12 10 15
+<< metal3 >>
+rect -106 22 -99 29
+rect -65 19 -58 26
+rect -20 22 -13 29
+rect 9 22 16 29
+<< gv2 >>
+rect -64 20 -59 25
+rect 96 23 101 28
+<< metal4 >>
+rect -65 19 -58 26
+rect 95 22 102 29
+rect 217 22 224 29
+<< gv3 >>
+rect -64 20 -59 25
+rect 96 23 101 28
+<< metal5 >>
+rect -65 19 -58 26
+rect 95 22 102 29
+rect -63 -5 -60 19
+rect 97 -5 100 22
+rect -63 -8 100 -5
+<< gv4 >>
+rect -64 20 -59 25
+rect 96 23 101 28
+use xor2  xor2_0
+timestamp 1759199526
+transform 1 0 -80 0 1 32
+box -41 -44 81 23
+use fulladd1  fulladd1_0
+timestamp 1760056151
+transform 1 0 241 0 1 9
+box -247 -21 249 47
+<< labels >>
+rlabel metal3 12 25 13 26 1 a
+rlabel metal3 -17 25 -16 26 1 b
+rlabel metal3 -103 25 -102 26 1 ctrl
+rlabel metal4 220 25 221 26 1 cin
+rlabel metal2 175 22 176 23 1 sum
+rlabel metal1 458 20 460 23 1 cout
+rlabel metal2 -112 36 -111 37 1 Vdd!
+rlabel metal2 -112 12 -111 13 1 GND!
+<< end >>
